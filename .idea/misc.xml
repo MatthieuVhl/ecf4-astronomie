@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/UtilisateurService/pom.xml" />
         <option value="$PROJECT_DIR$/CelesteService/pom.xml" />
         <option value="$PROJECT_DIR$/ObservationService/pom.xml" />
+        <option value="$PROJECT_DIR$/Authentification/pom.xml" />
       </list>
     </option>
   </component>

@@ -19,8 +19,8 @@ public class CelesteController {
     }
 
     @PostMapping("")
-    public ResponseEntity<Celeste> post(@RequestParam String productName, @RequestParam int userId, @RequestHeader(HttpHeaders.AUTHORIZATION) String token) {
-        Celeste celeste = celesteService.createCeleste(userId, productName);
+    public ResponseEntity<Celeste> post(@RequestParam String productName,@RequestParam String diametre,@RequestParam String kilometre, @RequestParam int userId, @RequestHeader(HttpHeaders.AUTHORIZATION) String token) {
+        Celeste celeste = celesteService.createCeleste(userId, productName,diametre,kilometre);
         return ResponseEntity.ok(celeste);
     }
 

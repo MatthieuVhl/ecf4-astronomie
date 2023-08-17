@@ -17,6 +17,8 @@ public class Celeste {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int userId;
+    private String diametre;
+    private String kilometres;
     private String name;
 
 }

@@ -16,8 +16,8 @@ public class CelesteService {
         this.celesteRepository = orderRepository;
     }
 
-    public Celeste createCeleste(int userId, String name) {
-        Celeste celeste = Celeste.builder().userId(userId).name(name).build();
+    public Celeste createCeleste(int userId, String name,String diametre,String kilometres) {
+        Celeste celeste = Celeste.builder().userId(userId).name(name).diametre(diametre).kilometres(kilometres).build();
         celesteRepository.save(celeste);
         return celeste;
     }
